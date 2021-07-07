@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container">
+
+        <div class="logo float-left">
+          <a href="index.html"><h1 class="text-light"><span><img src="{% static 'images/logo1.jpeg' %}" alt="" class="img-fluid">   Help Me Climb Foundation</span></h1></a>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+        <nav class="nav-menu float-right d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="/">Home</a></li>
+
+            <li class="drop-down"><a href="#services">Get Involed</a>
+              <ul>
+                <li><a href="donate">Donate</a></li>
+              </ul>
+            </li>
+            <li ><a href="bank">Bank Details</a>
+            </li>
+
+            <li class="drop-down"><a href="">Events</a>
+              <ul>
+
+                <li><a href="">Medical Camp</a></li>
+                <li><a href="">Free Medical checkup</a></li>
+                <li><a href="">Fundreaser</a></li>
+              </ul>
+            </li>
+            <li><a href="donate">Donate</a></li>
+        </ul>
+        </nav><!-- .nav-menu -->
+
+      </div>
+</header>
+<main id="main">
+<section id="contact" class="contact section-bg">
+  <div class="container">
+<div class="col-lg-5 col-md-12">
+  <div class="fields">
+  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+    <div class="form-group">
+      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="number" id="number" placeholder="Your Contact-No" data-rule="minlen:10" data-msg="Please enter validation number" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="address" id="address" placeholder="Address" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" name="amount" id="amount" placeholder="Amount" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" name="message" rows="5"  data-msg="Your Massage for us" placeholder="Message"></textarea>
+      <div class="validate"></div>
+    </div>
+    <div class="mb-3">
+      <div class="loading">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Your message has been sent. Thank you!</div>
+    </div>
+    <div class="text-center"><button type="submit">Send Message</button></div>
+  </form>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+    <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

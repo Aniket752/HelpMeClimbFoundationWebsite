@@ -1,0 +1,569 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'images/logo.png'%}" rel="icon">
+  <link href="{% static 'images/logo.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Amoeba - v2.2.0
+  * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container">
+      <div class="logo float-left">
+        <a href="index.html"><h1 class="text-light"><span><img src="{% static 'images/logo1.jpeg' %}" alt="" class="img-fluid">   Help Me Climb Foundation</span></h1></a>
+      </div>
+      <div class="logo float-left">
+      </div>
+      <div class="logo float-left">
+        <a href=""></a></h1>
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="drop-down"><a href="#services">Get Involed</a>
+            <ul>
+              <li><a href="donate">Donate</a></li>
+              <!--li><a htef="#">Volunteer</a></li-->
+            </ul>
+          </li>
+          <li ><a href="bank">Bank Details</a>
+          </li>
+          <li><a href="#team">Team</a></li>
+          <li class="drop-down"><a href="">Events</a>
+            <ul>
+              <!--li><a href="#"></a></li-->
+              <!--li class="drop-down"><a href="#">Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li-->
+              <li><a href="event">Medical Camp</a></li>
+              <li><a href="event">Free Medical checkup</a></li>
+              <li><a href="event">Fundreaser</a></li>
+            </ul>
+          </li>
+          <li><a href="donate">Donate</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <font color="black">
+    <div class="hero-container" id="imb">
+      <h1>Let's Fight Against Covid-19 Together</h1>
+      <h2>Join us in the fight </h2>
+      <a href="covid" class="btn-get-started scrollto">Donate</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Emergency Fundreaser</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Medical">Medical</li>
+              <li data-filter=".filter-Medical">Edecution</li>
+              <li data-filter=".filter-Medical">Covid-19</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 filter-Medical">
+            <div class="portfolio-item">
+              <img src="{% static 'images/case0.png'%}"  class="img-fluid" alt="" height="600px" width="800px">
+              <div class="portfolio-info">
+                <h3><a href="case1" data-gall="portfolioGallery"  title="Details">Suffering from:Subarachnoid Hemorrhage</a></h3>
+                <div>
+                  <!--a href="case1" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>-->
+                  <a href="case1" title="Details"><i class="icofont-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 filter-Medical">
+            <div class="portfolio-item">
+              <img src="{% static 'images/case333.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="case2" data-gall="portfolioGallery"  title="Details">Suffering from:Cervical PIVD</a></h3>
+                <div>
+
+                  <a href="case2" title="Details"><i class="icofont-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 filter-Medical">
+            <div class="portfolio-item">
+              <img src="{% static 'images/case1.jpeg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="case3" data-gall="portfolioGallery"  title="Details">Suffering from:Tubercular Abscess</a></h3>
+                <div>
+
+                  <a href="case3" title="Details"><i class="icofont-eye"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--div class="col-lg-4 col-md-6 filter-card">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2">Card 2</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>
+                  <a href="portfolio-details.html" title="Details"><i class="icofont-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div-->
+
+          <!--div class="col-lg-4 col-md-6 filter-web">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2">Web 2</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-eye"></i></a>
+                  <a href="portfolio-details.html" title="Details"><i class="icofont-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 filter-app">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3">App 3</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
+                  <a href="portfolio-details.html" title="Details"><i class="icofont-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 filter-card">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1">Card 1</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-eye"></i></a>
+                  <a href="portfolio-details.html" title="Details"><i class="icofont-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 filter-card">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3">Card 3</a></h3>
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 filter-web">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 1">Web 1</a></h3>
+                <div>
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 1"><i class="icofont-eye"></i></a>
+                  <a href="portfolio-details.html" title="Details"><i class="icofont-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div-->
+    </section><!-- End Our Portfolio Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>CARDIAC DEVICES</h2>
+          <p>Help Me Climb Foundation provides Cardiac Devices for the person in need. There are very few people in India who can afford such treatment so we as a organation have decided to reduce the cost of such devices so normal peoples could afford it. </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class=""><img src="{% static 'images/BiPacemaker.jpg'%}" height="150px" width="250px"></i></div>
+            <h4 class="title"><a href="">Pacemaker</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class=""><img src="{% static 'images/BiPacemaker2.jpg'%}" height="150px" width="250px"></i></div>
+            <h4 class="title"><a href="">Biventriculer Pacemaker</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class=""><img src="{% static 'images/loop2.jpg'%}" height="150px" width="250px" ></i></div>
+            <h4 class="title"><a href="">Cardiac Loop Recorder</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section class="call-to-action">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p>We have been giving our hands to people who need it for years. With your help it would be easier.</p>
+          <a class="cta-btn" href="donate">Donate</a>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="{% static 'images/helpmeclimb.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Help Me Climb Foundation was formed in 2014 by Mr Shreenavas Potnis and Varsha Potnis.</h3>
+            <p class="font-ital">
+              In 2019 Help Me Climb Foundation was passed to Dr. Mangesh Kadve and his team to take care in field of helthcare education and services.
+            </p>
+          <p>
+            At Help Me Climb Foundation we are focused on providing high quality primary care in low cost to the poor and underprivileged communites.
+            Our healthcare tieup centres with General medicine,Heart care neurosurgery dignostic services make medical care accessible,affordable and available to the rural and urban under-served communities across the state.
+          </p>
+            <p>
+              We provide our patients with medical consultation we also provide subsidized heart care neurosurgery in collaboration with various hospital and doctors and diagnostic services.
+            </p>
+            <p>
+              Till date we have served over 4000 patients at our helthcare centers and our mission is to improve the lives of many more.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <a data-toggle="collapse" class="" href="#faq1">What is Section 80G of income Tax act? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p>
+                The deductions under the Section 80G are the contributions made to charitable organisations or institutions with 80G exemption certificate. However, not all donations are eligible under this section.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">What Tax exemption benefit do I get?<i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p>
+                As per the revised tax exemption act, effective April 1, 2017, donations above INR 500 to Help Me Climb Foundation will be eligible for 50% tax exemption under Section 80G of Income Tax Act.
+                </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">What is the minimum amount that needs to be donated to get a tax exemption? <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-parent=".faq-list">
+              <p>
+                A minimum of INR 500 should be donated to avail tax exemption under IT Sec 80G.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">What if the Tax receipt is misplaced? <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-parent=".faq-list">
+              <p>
+                We may not be able to provide you a duplicate receipt. But we can send you the Income Tax Exemption certificate copy.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">How can you donate to HMCF? <i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-parent=".faq-list">
+              <p>
+              You can donate through HMCF Website, Cheque, Paytm QR, Online Transfer (IMPS, UPI, NEFT & RTGS)
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Is there tax exemptions on cash donations as well? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-parent=".faq-list">
+              <p>
+                Cash donations above INR 500 are applicable for 80G certificates.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <!--p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p-->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Mr. Shreenavas Potnis</h4>
+              <span>Co-Founder</span>
+              <!--p>
+                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+              </p-->
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Miss. Varsha Potnis</h4>
+              <span>Co-Founder</span>
+              <!--p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              </p-->
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>Dr. Mangesh Kadve</h4>
+              <span>Director</span>
+              <p>
+                "Dr. Mangesh is working in field of medical field from last 21 years he has vast experience in medical device field. He has worked with many multy-national companies mainly Sanofi, Medtronic, Biotronik and preventive healthcare field. His aim is to provide affording healthcare to needy."
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Help Me Climb</h3>
+              <p> The exception under section 80G of Income Tax 1961 is applicable via order no. PN/CIT(Exemp.)/Tech/12AA/PuneRg/70/345/2016-17/3533 dated 20-10-2016 by The Commissioner of Income Tax, Pune </p>
+              <p>For CSR partnerships and institutional enquiries please write to support@helpmeclimb.org</p>
+              <h5>PAN NO : AADCH4913K</h5>
+              <br>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info">
+              <div>
+                <i class="icofont-google-map"></i>
+                <p>303,Garden plaza,Pimple Saudager<br>pune, 411017</p>
+              </div>
+              <div>
+                <i class="icofont-envelope"></i>
+                <p>support@helpmeclimb.org</p>
+              </div>
+
+              <div>
+                <i class="icofont-phone"></i>
+                <p>+91 7821851928</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <form action="massage" method="GET"  class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" onclick="alt()">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+    <!-- ======= Map Section ======= -->
+    <section class="map">
+      <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    --></section><!-- End Map Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Help Me Climb</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/ -->
+        Devloped by <a href="devloper">Kara IT Solutions.</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script type="text/javascript">
+    function alt(){
+      alert("Massage sent");
+    }
+  </script>
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

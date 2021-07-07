@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'images/logo.png'%}" rel="icon">
+  <link href="{% static 'images/logo.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Amoeba - v2.2.0
+  * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <a href="index.html"><h1 class="text-light"><span><img src="{% static 'images/logo1.jpeg' %}" alt="" class="img-fluid">   Help Me Climb Foundation</span></h1></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+    </div>
+  </header><!-- End #header -->
+  <main id="main">
+
+  <section id="about" class="about">
+    <div class="container">
+      <marquee direction="right" color="red"><font color="red" size="5px">This Is An Emergency Fundreaser.</font></marquee>
+      <section id="contact" class="contact section-bg rounded">
+        <center><h4 ><font color="black">Mr. Jayram Lende (43/M) C/o Anuresym. He nedd ICU and Medical Management. He suggested surgery of Anuresym Clipping.</h4></center>
+      </section>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-2">
+          <div class="fields">
+          <form  action="submit" method="get" class="php-email-form" >
+            {% csrf_token%}
+            <center>
+              <h2 class="text-center font-weight-bold mt-2">HELP US TO ACHIEVE!<br> ₹ 7,55,500</h2>
+              <h3>I would like to donate</h3>
+
+            <table <table cellpadding="20" cellspacing="10">
+              <tr>
+                <td align="left"><div class="text-center"><button type="button" class="btn btn-info" value="1800" onclick="one()">Rs. 1800</button></td>
+                <td align="right"><button type="button" class="btn btn-info" value="3600" onclick="two()">Rs. 3600</button></div></td>
+              </tr>
+              <tr >
+                <td align="left"><div class="text-center"><button type="button" class="btn btn-info" value="4400" onclick="three()">Rs. 4400</button></div></td>
+                <td align="right"><div class="text-center"><button type="button" class="btn btn-info" value="6200" onclick="four()">Rs. 6200</button></div></td>
+              </tr>
+          </table>
+          </center>
+            <div class="form-group">
+              <input type="text" class="form-control" name="amount" id="amount" placeholder="Amount" required />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" required/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" name="number" id="number" placeholder="Contact-No" data-rule="minlen:10" data-msg="Please enter validation number" required/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="pan" id="pan" placeholder="Pan-No" data-rule="minlen:10" data-msg="Please enter validation number" required/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="address" id="address" placeholder="Address" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="hidden" class="form-control" name="orderid" id="orderid" value="01"/>
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <select name="select" value="Who inspried you" name="who" class="form-control" required>
+                <option value="Who inspried you">Who inspried you</option>
+                <option value="Socal media">Socal media</option>
+                <option value="Email">Email</option>
+                <option value="Socal media">Face to face interaction with our staff</option>
+                <option value="Phone call">Phone call</option>
+                <option value="Friend">Friend's recommendation</option>
+                <option value="web">Web serch</option>
+                <option value="News">News</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="validate"></div>
+              </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5"  data-msg="Your Massage for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+                <div class="text-center"><button type="submit" class="btn btn-info" value="submit" onclick="orid()">Donate</button></div>
+          </form>
+        </div>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1">
+          <img src="{% static 'images/case222.jpg' %}" class="img-fluid main-img  z-depth-4 rounded " alt="">
+          <br>
+          <br>
+          <section id="contact" class="contact section-bg rounded">
+          <p><font color="black"><center>Mr. Jayram 47 year old man He is Suffering from Anuresym he needs ICU and Medical Management. He suggested surgeryof Anuresym Clipping .He is currently adimited in Star hospital Akurdi Pune.Approximate cost of surgery and hospital expence will be Rs.755500/-</cen></font></p>
+          <p><font color="black">The financial condation of the patient is very poor.Kindly look into the matter and help us to collect the required amount.</font></p>
+        </section>
+        <img src="{% static 'images/incomecase1.jpg' %}" class="img-fluid main-img  z-depth-4 rounded " alt="">
+        <p> <h4><font color="black">How can you help</h4> </p>
+        <ul>
+          <li>-Help us collect funds by donating to this Fundreaser</li>
+          <li>-Volunteer to collect funds and save his life</li>
+          <li>-Share the story with your friends and family</li>
+        </ul>
+        <p> <h4>Tax Benefit</h4>
+          Any amount you donate to Help ma climp foundation you get 50% tax Exemption under section 80G of Income Tax 1961.
+         </p>
+         <br>
+         <p><h4>Patients Documents</h4></p>
+         <br>
+         <img src="{% static 'images/docc1.jpeg' %}" class="img-fluid main-img  z-depth-4 rounded " alt="">
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Help Me Climb</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/ -->
+          Devloped by <a href="devloper">Kara IT Solutions.</a>
+        </div>
+      </div>
+    </footer><!-- End #footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+    <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript">
+      var i=18;
+      function orid(){
+        var d=document.getElementById("orderid");
+        d.value=Math.floor(Math.random()*(+500000 - +0));
+        console.log(d.value);
+        i=i+1;
+      }
+      function one(){
+        var a=document.getElementById("amount");
+        a.value="1800";
+      }
+      function two(){
+        var a=document.getElementById("amount");
+        a.value="3600";
+      }
+      function three(){
+        var a=document.getElementById("amount");
+        a.value="4400";
+      }
+      function four(){
+        var a=document.getElementById("amount");
+        a.value="6200";
+      }
+    </script>
+  </body>
+
+  </html>

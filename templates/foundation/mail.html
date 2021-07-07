@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container">
+
+        <div class="logo float-left">
+          <!--h1 class="text-light"><a href=""><span>Help Me Climb</span></a></h1-->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html"><h1 class="text-light"><span><img src="{% static 'images/logo1.jpeg' %}" alt="" class="img-fluid">   Help Me Climb Foundation</span></h1></a>
+        </div>
+        <div class="float-right">
+          <table >
+            <tr>
+              <td><font color="black">Recipt No-{{ r_no }}</td>
+            </font></tr>
+          </table>
+        </div>
+
+      </div>
+    </header><!-- End #header -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <font size="15px" color="black">
+    <div style="float:right; width:100%"><hr/></div>
+    <br>
+    <h3>Thank you {{ Name }} for contributing {{ amount }} on {{ Date }} to Help Me Climb Foundation vide transaction number {{ t_id }}
+    </h3><br>
+    <br>
+    <h3>This recipt is exempt from revenue stamp vide Exemption,Artical 53,schedule of the indian stamp Act 1899.Donation made to HELP ME CLIMB FOUNDATION from //foundation_date onwards qualify for deduction u/s 80G of Income Tax Act 1961 videcertificate of Exemption no...........
+  </h3><br>
+    <br>
+    <h2>PAN NO : AADCH4913K</h2>
+    <br>
+    <h3>Dr. Mangesh,<br>
+    HELP ME CLIMB FOUNDATION
+  </h3><div style="float:right; width:100%"><hr/></div>
+    <br>
+  </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="contact-about">
+          <br>
+          <p>303,Garden plaza,Pimple Saudager<br>pune, 411017</p>
+          <div>
+            <i class="icofont-envelope"></i>
+            <p>contact@helpmeclimb.org</p>
+          </div>
+
+          <div>
+            <i class="icofont-phone"></i>
+            <p>+1 5589 55488 55s</p>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End #footer -->
+  </body>
+</html>
